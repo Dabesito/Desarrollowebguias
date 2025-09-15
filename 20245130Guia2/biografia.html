@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Biografía — Diego Baños</title>
+    <link rel="stylesheet" href="css/estilo_bio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">  
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="site-header">
+            <h1 class="logo">Diego Alberto Baños Ehlerman</h1>
+            <nav class="main-nav">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <img class="perfil" src="img/perfil.jpg" alt="Foto Diego">
+                <div class="hero-text">
+                    <h2>Hola, soy Diego 👋</h2>
+                    <p>Estudiante en ESEN · Tercer ciclo de segundo año</p>
+                    <a class="btn" href="#sobre-mi">Conóceme</a>
+                </div>
+            </section>
+
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <article class="card">
+                    <p>
+                        Soy <strong>Diego Baños</strong>, estudiante de tercer ciclo en la ESEN. Me defino como una
+                        persona sociable y
+                        proactiva, con un gran interés por conectar con los demás y construir relaciones significativas.
+                        Disfruto enormemente de compartir tiempo con mi pareja y amigos, siempre buscando nuevas
+                        experiencias y actividades que nos permitan crecer juntos.
+                    </p>
+                    <p>
+                        Además, me apasiona la tecnología, ya que creo que siempre hay algo nuevo por descubrir y
+                        aprender. Esta convicción me impulsa a mantenerme en constante actualización sobre las últimas
+                        innovaciones y tendencias
+                    </p>
+                </article>
+            </section>
+
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <article class="card hobby">
+                    <img src="img/futbol.jpg" alt="jugando fútbol">
+                    <div>
+                        <h3>Fútbol</h3>
+                        <p>Me encanta hacer deportes, en especial jugar fútbol con mis amigos.</p>
+                    </div>
+                </article>
+                <article class="card hobby">
+                    <img src="img/amigos.jpg" alt="con amigos">
+                    <div>
+                        <h3>Pasar con amigos</h3>
+                        <p>Disfruto compartir tiempo con mis amigos, salir y crear recuerdos juntos.</p>
+                    </div>
+                </article>
+                <article class="card hobby">
+                    <img src="img/minecraft.jpg" alt="jugar video juegos">
+                     <div>
+                        <h3>Video Juegos</h3>
+                        <p>En mis tiempos libres, juego video juegos para distraerme y contruir un nuevo mundo.</p>
+                     </div>
+                </article>
+            </section>
+
+            <section id="experiencia">
+                <h2>Experiencia y proyectos</h2>
+                <article class="card">
+                    <h3>Proyecto universitario</h3>
+                    <p>Participé en el diseño e implementación de una aplicación para gestionar ventas.</p>
+                </article>
+                <article class="card">
+                    <h3>Aprendiz autodidacta</h3>
+                    <p>Estudio temas de tecnología y desarrollo web por mi cuenta.</p>
+                </article>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:ehlerman13579@gmail.com ">ehlerman13579@gmail.com </a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/ehlerman__?igsh=MWJzcWc0d3J6eG1qaA=="
+                            target="_blank">@ehlerman__</a></li>
+                    <li>LinkedIn: <a href="#">Mi perfil</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>© <span id="year"></span> Diego Baños</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
