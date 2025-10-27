@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 0 0 15px 15px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.perfil img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.info h2 {
+  color: #004aad;
+}
+
+
+.materia {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.materia ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+
+.guias {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.guia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f0f4ff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.guia a {
+  background-color: #004aad;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.guia a:hover {
+  background-color: #00327a;
+}
+
+
+.foda {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.foda-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.foda-item {
+  flex: 1 1 calc(50% - 1rem);
+  background: #eef1f8;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.foda-item h3 {
+  color: #004aad;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #004aad;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guia {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foda-item {
+    flex: 1 1 100%;
+  }
+}
