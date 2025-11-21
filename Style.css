@@ -1,0 +1,95 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Fondo gris claro suave */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Azul oscuro elegante */
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #3498db; /* Línea azul para separar el título */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+}
+
+
+/* Contenedor principal para centrar y aplicar un ancho máximo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el contenedor de todas las guías */
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseños responsivos en una cuadrícula */
+    gap: 30px;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none; /* Elimina los puntos predeterminados */
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada para destacar la caja */
+    transition: transform 0.3s ease-in-out;
+}
+
+ul:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+}
+
+h2 {
+    background-color: #3498db; /* Fondo azul brillante para el encabezado de la guía */
+    color: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+li {
+    border-bottom: 1px solid #ecf0f1; /* Separador entre ítems */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #2980b9; /* Color de enlace azul */
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #e8f5ff; /* Fondo muy claro al pasar el mouse */
+    color: #1a5a8a;
+    text-decoration: underline;
+}
+
+/* Estilo para los últimos elementos (para redondear la parte inferior) */
+ul > li:last-child > a {
+    border-radius: 0 0 8px 8px;
+}
